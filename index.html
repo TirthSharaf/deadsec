@@ -9,6 +9,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="dedsec-gif-intro">
+  <img src="Deadsec.gif" alt="DedSec Intro" />
+</div>
+</div> <!-- closes #main-site -->
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      const intro = document.getElementById('dedsec-gif-intro');
+      const site = document.getElementById('main-site');
+      if (intro && site) {
+        intro.style.display = 'none';
+        site.style.display = 'block';
+      }
+    }, 5000); // show GIF for 5 sec
+  });
+</script>
+<div id="main-site" style="display: none;">
     <div class="loading-screen">
         <div class="terminal">
             <div class="terminal-header">
